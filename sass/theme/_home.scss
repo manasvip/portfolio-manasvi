@@ -1,0 +1,63 @@
+.hello {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $dark;
+  margin-bottom: 1.5rem;
+  margin-top: 5rem;
+}
+.description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+
+  span {
+    font-weight: 600;
+    border-bottom: 0.125rem solid $dark;
+  }
+}
+
+.heading {
+  color: $dark;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  margin-top: 6rem;
+
+  &:before {
+    content: "";
+    width: 1.5rem;
+    height: 0.175rem;
+    background-color: $dark;
+    position: absolute;
+    z-index: 6;
+    top: -1.25rem;
+    left: 0;
+  }
+}
+
+.recent-work {
+  margin-bottom: 3rem;
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: $dark-light;
+    margin-bottom: 0;
+  }
+}
+
+.works {
+  .recent-work:nth-child(1) {
+    color: $color-one;
+  }
+  .recent-work:nth-child(2) {
+    color: $color-two;
+  }
+  .recent-work:nth-child(3) {
+    color: $color-three;
+  }
+
+}

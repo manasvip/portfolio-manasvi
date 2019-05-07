@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jumtech Starter</title>
+  <title>Manasvi Prasad Chakma</title>
   <!-- theme stylesheet -->
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/theme.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" href="https://use.typekit.net/zvs6vse.css">
 
   <!-- jQuery -->
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -15,17 +18,36 @@
 </head>
 <body>
 
+  <div id="mobile-menu" class="mobile-menu">
+    <header>
+      <img src="images/icons/close.svg" alt="close menu" onclick="closeNav()">
+    </header>
+    <ul class="nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">Recent Works</a></li>
+      <li><a href="">Codepen</a></li>
+      <li><a href="">Github</a></li>
+    </ul>
+    <footer>
+      <p class="copyright">&copy; All rights reserved by manasvi</p>
+    </footer>
+  </div>
+
   <div class="site-header">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row space-between">
+        <div class="col-8">
           <div class="site-logo">
-            <h1>Logo</h1>
+            <img src="images/manasvi-l.png" alt="Manasvi Prasad Chakma" class="img-responsive">
           </div>
         </div>
-        <div class="col-md-8">
-          <h2>Navigation</h2>
+
+        <div class="col-4">
+          <div class="site-nav">
+            <img src="images/icons/nav.svg" alt="Nav bar" onclick="openNav()">
+          </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -33,16 +55,45 @@
   <div class="site-content">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-12">
           <div class="site-main">
-            <h1>Hello world!</h1>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div class="site-sidebar">
+            <h1 class="hello">
+                <span class="typer" id="main" data-words="Bonjour,Hello,¡Hola!" data-delay="100" data-deleteDelay="5000"></span>
+                <span class="cursor" data-owner="main"></span>
+            </h1>
+            <p class="description mb-2">
+              I'm Manasvi Prasad Chakma. A self motivated web developer, where my coding journey started from 2014 at the age of 21. In the long journey of coding I have learned deep level of <span>front-end development</span>, <span>WordPress</span>, <span>Node.js</span>, Vue.js and <span>React</span>.
+            </p>
+
+            <p class="description">
+              I’m really proud to share where I have worked for personal clients, companies and for startup <span>X Company</span>, <span>y company</span>, <span>z company</span>, <span> XY startup</span>, etc.
+            </p>
+
+            <h1 class="heading">Recent Work</h1>
+
+            <div class="works">
+
+              <div class="recent-work">
+                <h1 class="color-one">Jumtech.net — Role of front-end developing and teamlead</h1>
+                <p>Started Feb 08, 2019 and ended March 01, 2019</p>
+              </div>
+
+              <div class="recent-work">
+                <h1>Juvida.com — Role of front-end with react.js</h1>
+                <p>Started Feb 08, 2019 and ended March 01, 2019</p>
+              </div>
+
+              <div class="recent-work">
+                <h1>Startup project for design agency based in Dhaka</h1>
+                <p>Started Feb 08, 2019 and ended March 01, 2019</p>
+              </div>
+
+            </div>
+
 
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -50,14 +101,30 @@
   <div class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <p>&copy; 2018</p>
+        <div class="col-12">
+          <p class="copyright">&copy; All rights reserved by manasvi</p>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="contact-me">
+    <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><img src="images/icons/telegram.svg" alt="contact"></a>
+  </div>
+
   <!-- theme script -->
+  <script>
+    /* Open the sidenav */
+    function openNav() {
+      document.getElementById("mobile-menu").style.width = "100%";
+    }
+
+    /* Close/hide the sidenav */
+    function closeNav() {
+      document.getElementById("mobile-menu").style.width = "0";
+    }
+  </script>
   <script src="js/theme.min.js"></script>
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </body>
 </html>

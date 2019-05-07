@@ -1,0 +1,34 @@
+.site-footer {
+  margin-top: 3rem;
+}
+.copyright {
+  border-top: solid 1px #d1d1d1;
+  padding-top: 1rem;
+  width: 100%;
+  display: inline-block;
+  color: $dark;
+  line-height: 1;
+}
+
+.contact-me {
+  background-color: $dark;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 1.125rem;
+    width: auto;
+    margin-left: -0.125rem;
+  }
+}

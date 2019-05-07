@@ -1,0 +1,27 @@
+.site-header {
+  height: 3rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 8;
+}
+.site-logo, 
+.site-nav {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+.site-logo {
+  img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+}
+.site-nav {
+  float: right;
+  img {
+    height: 1.125rem;
+  }
+}
