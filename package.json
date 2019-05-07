@@ -20,6 +20,7 @@
   "license": "GPL-3.0",
   "homepage": "https://manasvi.info",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "3.9.1",
@@ -36,6 +37,7 @@
     "gulp-sequence": "^1.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
-    "gulp-watch": "^5.0.1"
+    "gulp-watch": "^5.0.1",
+    "wow.js": "^1.2.2"
   }
 }

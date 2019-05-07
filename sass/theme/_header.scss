@@ -25,3 +25,27 @@
     height: 1.125rem;
   }
 }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+  .site-header {
+    width: 34%;
+  }
+  .site-content {
+    width: 66%;
+  }
+  .site-content, 
+  .site-footer {
+    float: left;
+    margin-left: 34%;
+  }
+
+  // other styles
+  .site-header {
+    height: 100vh;
+    background-color: #efefef;
+    position: fixed;
+  }
+
+}
