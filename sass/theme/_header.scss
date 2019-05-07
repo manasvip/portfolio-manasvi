@@ -70,6 +70,7 @@
   }
 
   .intro {
+    display: block;
     .name {
       font-size: 2rem;
       margin-bottom: 0;
@@ -142,6 +143,9 @@
   .site-header .col-4,
   .contact-me {
     display: none;
+  }
+  .nav.desktop {
+    display: block;
   }
 
 }
