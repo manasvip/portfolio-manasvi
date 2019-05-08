@@ -133,6 +133,7 @@ gulp.task( 'scripts', function() {
     // Start - All BS stuff
     // paths.dev + '/js/bootstrap/bootstrap.min.js',
     paths.dev + '/js/wow.js',
+    paths.dev + '/js/vanillajs-scrollspy.js',
 
     // Adding currently empty javascript file to add on for your own themes´ customizations
     // Please add any customizations to this .js file only!

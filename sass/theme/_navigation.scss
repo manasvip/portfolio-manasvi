@@ -50,6 +50,11 @@
     color: $menu;
     text-decoration: none;
     font-weight: 700;
+
+    &.active {
+      color: $dark;
+      text-decoration-line:line-through;
+    }
   }
 }
 
