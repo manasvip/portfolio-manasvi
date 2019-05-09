@@ -35,10 +35,11 @@
   padding: 0 1.5rem;
   list-style: none;
   width: 100%;
-  height: calc( 100vh - 6rem);
+  height: calc( 100vh - 9rem);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  margin-top: 3rem;
 
   li {
     width: 100%;
