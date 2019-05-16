@@ -36,14 +36,12 @@
   list-style: none;
   width: 100%;
   height: calc( 100vh - 9rem);
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
   margin-top: 3rem;
 
   li {
     width: 100%;
-    display: flex;
+    display: inline-block;
+    margin: 1rem 0;
 
   }
   a {
@@ -51,10 +49,11 @@
     color: $menu;
     text-decoration: none;
     font-weight: 700;
+    line-height: 0;
+    display: inline-block;
 
     &.active {
       color: $dark;
-      text-decoration-line:line-through;
     }
   }
 }

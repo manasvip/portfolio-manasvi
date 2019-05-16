@@ -21,47 +21,14 @@ ul.flip {
 }
 
 ul.flip li {
+  font-size: 4rem;
   line-height: 4.875rem;
   margin:0;
   font-size: 4rem;
   font-weight: 700;
   color: #212121;
+  font-family: 'proxima-nova-condensed';
 }
-
-@keyframes change {
-  0%   {margin-top:0;}
-  20%  {margin-top:0;}
-  35%  {margin-top:-4.875rem;}
-  55%  {margin-top:-4.875rem;}
-  70%  {margin-top:-9.75rem;}
-  85%  {margin-top:-9.75rem;}
-  90%  {margin-top:-9.75rem;}
-  100% {margin-top:0;}
-}
-
-@-webkit-keyframes change {
-  0%   {margin-top:0;}
-  20%  {margin-top:0;}
-  35%  {margin-top:-4.875rem;}
-  55%  {margin-top:-4.875rem;}
-  70%  {margin-top:-9.75rem;}
-  85%  {margin-top:-9.75rem;}
-  90%  {margin-top:-9.75rem;}
-  100% {margin-top:0;}
-}
-
-@-ms-keyframes change {
-  0%   {margin-top:0;}
-  20%  {margin-top:0;}
-  35%  {margin-top:-4.875rem;}
-  55%  {margin-top:-4.875rem;}
-  70%  {margin-top:-9.75rem;}
-  85%  {margin-top:-9.75rem;}
-  90%  {margin-top:-9.75rem;}
-  100% {margin-top:0;}
-}
-
-
 
 .description {
   font-size: 1.25rem;
@@ -106,6 +73,7 @@ ul.flip li {
   font-weight: 400;
   position: relative;
   margin-top: 6rem;
+  font-family: 'proxima-nova', sans-serif;
 
   &:before {
     content: "";

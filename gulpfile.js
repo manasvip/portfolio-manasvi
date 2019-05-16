@@ -132,7 +132,7 @@ gulp.task( 'scripts', function() {
 
     // Start - All BS stuff
     // paths.dev + '/js/bootstrap/bootstrap.min.js',
-    paths.dev + '/js/wow.js',
+    //paths.dev + '/js/wow.js',
     paths.dev + '/js/vanillajs-scrollspy.js',
 
     // Adding currently empty javascript file to add on for your own themes´ customizations
@@ -158,7 +158,7 @@ gulp.task( 'css', function() {
     // All BS stuff
     // paths.dev + '/css/bootstrap/bootstrap.min.css',
     paths.dev + '/css/nomalize.css',
-    paths.dev + '/css/animate.css',
+    //paths.dev + '/css/animate.css',
 
   ];
 gulp.src( css )
@@ -185,12 +185,12 @@ gulp.task( 'copy-assets', function() {
   // Copy all JS files
   // var stream = gulp.src( paths.node + 'bootstrap/dist/js/**/*.js' )
   //   .pipe( gulp.dest( paths.dev + '/js/bootstrap' ) );
-  var stream = gulp.src( paths.node + 'wow.js/dist/wow.js' )
-    .pipe( gulp.dest( paths.dev + '/js' ) );
+  //var stream = gulp.src( paths.node + 'wow.js/dist/wow.js' )
+  //  .pipe( gulp.dest( paths.dev + '/js' ) );
 
   // Copy CSS files
-  gulp.src(paths.node + 'animate.css/animate.css')
-    .pipe(gulp.dest(paths.dev + '/css'));
+  //gulp.src(paths.node + 'animate.css/animate.css')
+  //  .pipe(gulp.dest(paths.dev + '/css'));
 
 });
 

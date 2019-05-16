@@ -67,20 +67,28 @@
   }
 
   // other styles
+  // Fixed div scrollable
   .site-header {
-    height: auto;
-    height: 100vh;
-    background-color: #fff;
-    padding-top: 4rem;
+    min-height: 100vh;
     box-shadow: none;
-    position: fixed;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
   }
+  // Hide scrollbar
+  .site-header::-webkit-scrollbar { 
+    display: none; 
+  } 
   .site-content {
     margin-left: 33.3333%;
   }
   .site-logo {
     display: inline-block;
     height: auto;
+    width: 100%;
+    padding-top: 4rem;
     img {
       height: 7.5rem;
       width: 7.5rem;
@@ -88,7 +96,8 @@
   }
 
   .intro {
-    display: block;
+    display: inline-block;
+    width: 100%;
     .name {
       font-size: 2rem;
       margin-bottom: 0;
@@ -111,8 +120,8 @@
     align-items: center;
     padding-left: 0.125rem;
     padding-right: 0.125rem;
-    position: relative;
-    margin-top: 2rem;
+    position: fixed;
+    bottom: 3rem;
 
     &:hover {
       .arrow {
@@ -163,12 +172,18 @@
     display: none;
   }
   .nav.desktop {
-    display: block;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 6rem;
   }
 
 }
-
-@media ( min-width: 1199.99px ) {
+@media ( min-width: 768px ) and ( max-width: 1000px ) {
+  .nav li a {
+    line-height: inherit;
+  }
+}
+@media ( max-resolution: 160dpi ) {
 
   .site-main {
     width: 35rem;
@@ -178,11 +193,11 @@
   }
 
   .contact-btn {
-    height: 2.25rem;
+    height: 3rem;
     width: 11.5rem;
     border-radius: 2.25rem;
-    padding-left: 0.125rem;
-    padding-right: 0.125rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 
     &:hover {
       .arrow {
@@ -191,17 +206,19 @@
     }
 
     .arrow {
-      height: 2rem;
-      width: 2rem;
-      border-radius: 2rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 2.5rem;
       img {
         height: 1.125rem;
         margin-left: 0.25rem;
+        margin-left: 0.5rem;
       }
     }
 
     span {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
+      left: 3rem;
     }
 
   }
@@ -209,26 +226,4 @@
 
 }
 
-@media ( min-width: 1660px ) {
 
-  body {
-    font-size: 2rem;
-  }
-
-  .site-header {
-    .col-8 {
-      text-align: right;
-    }
-
-    .contact-btn {
-      float: right;
-    }
-
-    .nav li {
-      justify-content: flex-end;
-    }
-  }
-
-
-
-} 
