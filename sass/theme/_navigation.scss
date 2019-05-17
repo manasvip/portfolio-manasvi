@@ -60,10 +60,18 @@
 
 // Medium devices (tablets, 768px and up)
 @media ( min-width: 768px ) {
+
   .nav {
     justify-content: inherit;
     padding: 0;
     margin-top: 2rem;
     height: auto;
+    li {
+    margin: 0.375rem 0;
+    }
+    a {
+      line-height: 1.2;
+    }
   }
+
 }

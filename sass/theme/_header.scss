@@ -62,7 +62,6 @@
     width: 25rem;
   }
 
-
   .col-8 {
     width: 100%;
   }
@@ -122,7 +121,7 @@
     padding-left: 0.125rem;
     padding-right: 0.125rem;
     position: fixed;
-    bottom: 3rem;
+    bottom: 1rem;
 
     &:hover {
       .arrow {
@@ -179,11 +178,13 @@
   }
 
 }
-@media ( min-width: 768px ) and ( max-width: 1000px ) {
-  .nav li a {
-    line-height: inherit;
+
+@media ( min-width: 992px ) {
+  .contact-btn {
+    bottom: 3rem;
   }
 }
+
 @media ( max-resolution: 160dpi ) {
 
   .site-main {
